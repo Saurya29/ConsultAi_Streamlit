@@ -5,7 +5,13 @@ from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
 
 # 1. Load PDF
-loader = PyPDFLoader(r"E:\Downloads\Case-in-Point-2013.pdf")
+from langchain_community.document_loaders import PyPDFLoader
+import os
+
+PDF_PATH = os.path.join("data", "Case-in-Point-2013.pdf")
+loader = PyPDFLoader(PDF_PATH)
+documents = loader.load()
+
 pages = loader.load()
 
 # 2. Split text
