@@ -1,0 +1,6 @@
+# Python
+venv/
+venv_groq/
+__pycache__/
+*.pyc
+.env

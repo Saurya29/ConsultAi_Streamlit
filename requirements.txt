@@ -1,0 +1,20 @@
+# Core
+python-dotenv
+
+# UI
+streamlit
+
+# LangChain core
+langchain
+langchain-core
+langchain-community
+langchain-text-splitters
+
+# Groq LLM
+langchain-groq
+
+# Vector DB
+faiss-cpu
+
+# Docs
+pypdf
